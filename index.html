@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<h1><u>Inventario de mercaderias</u></h1>
+<br>
+<div id="form-box">
+<form>
+  <div>
+    <span>Sucursal:</span> 
+      <select id="sucursal">
+          <option value="Encarnacion">Encarnacion</option>
+          <option value="Bogado">Cnl. Bogado</option>
+          <option value="Miranda">Cap. Miranda</option>
+      </select>
+  </div>
+  
+  <div>
+    <span>Nombre:</span> <input type="text" id="nombre" class="input" placeholder="nombre de la mercaderia">
+  </div>
+  <div>
+    <span>Cantidad:</span> <input type="number" class="input" id="cantidad" placeholder="unidades">
+  </div>
+  
+  <div>
+    <span>Fecha:</span> <input type="date" class="input" id="fecha">
+  </div>
+  
+  <div>
+    <span>Lote:</span> <input type="text" id="lote" class="input" placeholder="especifique el lote">
+  </div>
+</form>
+</div>
+
+<div id="button" class="button" onclick="onGuardarMercaderia()">Guardar mercaderia</div>
+
+<script src="script.js"></script>
